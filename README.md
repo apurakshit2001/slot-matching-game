@@ -1,3 +1,9 @@
+# Click on this to view the game - https://slot-machine-jackpot.onrender.com
+
+![image](https://github.com/apurakshit2001/slot-matching-game/assets/128841242/7b76b6e2-5794-4a04-a691-017c04288306)
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
