@@ -1,38 +1,80 @@
-.App {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #d2dbdd;
+  font-family: "Raleway", sans-serif;
+}
+
+.heading_style {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ccc;
+}
+
+.slot_machine {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.slot_inner {
+  margin: 1rem;
+  padding: 1.5rem;
+  width: 40%;
+  min-height: 30vh;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slot_inner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.slot_inner h1.win {
+  color: #4caf50;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.slot_inner h1.lose {
+  text-align: center;
+  color: #f44336;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  margin: 1rem auto;
+  width: 60%;
+  border: 2px solid #4caf50;
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #4caf50;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 768px) {
+  .slot_inner {
+    width: 80%;
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    width: 80%;
   }
 }
